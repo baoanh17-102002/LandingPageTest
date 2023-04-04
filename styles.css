@@ -1,20 +1,23 @@
-nav{
+nav {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-    
+
     padding: 20px;
     transition: all 0.4s ease;
 }
-nav.sticky{
+
+nav.sticky {
     background: white;
     padding: 15px 20px;
     border: grey 0px solid;
     box-shadow: 0px 0.5px;
+    z-index: 999;
 }
-nav .nav-content{
-    
+
+nav .nav-content {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,17 +25,19 @@ nav .nav-content{
     max-width: 1200px;
     height: 100%;
 }
-.nav-content .nav-links{
+
+.nav-content .nav-links {
     display: flex;
     align-items: center;
 
 }
-.nav-content .nav-links li{
+
+.nav-content .nav-links li {
     list-style: none;
     margin: 0 10px;
 }
 
-.nav-links li a{
+.nav-links li a {
     font-size: 16px;
     font-weight: 700;
     padding: 10px 4px;
@@ -40,16 +45,78 @@ nav .nav-content{
     text-decoration: none;
     transition: all 0.4s ease;
 }
-.nav-links li a:hover{
+
+.nav-links li a:hover {
     color: orange;
 }
-nav.sticky .nav-links li a{
+
+nav.sticky .nav-links li a {
     color: black;
 }
-nav.sticky .nav-links li a:hover{
+
+nav.sticky .nav-links li a:hover {
     color: orange;
 }
-.home{
+
+.home {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to top, #f48022, #ffffff);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+
+}
+
+.home .radiusframe {
+    background: white;
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+
+    border: 2px solid #7C5431;
+    
+    
+    border-radius: 20px;
+}
+.home .radiusframe .slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    border-radius: 18px;
+    
+}
+.home .radiusframe .slider img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    background-size: contain;
+    z-index: 1;
+}
+.home .radiusframe .slider img.active {
+    opacity: 1;
+    
+}
+.text1 {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #f48022, #ffffff);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    
+}
+
+.text2 {
     height: 80vh;
     width: 100%;
     background: linear-gradient(to top, #f48022, #ffffff);
