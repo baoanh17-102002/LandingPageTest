@@ -124,3 +124,41 @@ nav.sticky .nav-links li a:hover {
     background-position: center;
 
 }
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  .course-card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    text-align: center;
+  }
+  .course-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .course-card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .course-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .course-card a {
+    display: inline-block;
+    background-color: #0077cc;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .course-card a:hover {
+    background-color: #005ea6;
+  }
+
